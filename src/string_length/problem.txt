@@ -1,0 +1,2 @@
+Given string of symbols
+Need to calculate its length
