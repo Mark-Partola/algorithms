@@ -73,14 +73,14 @@ class PriorityQueue:
         self.queue.append(el)
         self.queue = sift_up(self.queue)
 
-    def getQueue(self):
+    def get_queue(self):
         return self.queue
 
 
 class Test(unittest.TestCase):
     def test_priority_queue_set(self):
         q = PriorityQueue([1, 4, 2, 6, 4, 2, 0])
-        result = q.getQueue()
+        result = q.get_queue()
         self.assertEqual(result, [0, 4, 1, 6, 4, 2, 2])
 
     def test_peek(self):
